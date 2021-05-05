@@ -1,0 +1,42 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+div.overview {
+  margin-top: 200px;
+  text-align: center;
+}
+div.current-temperature-info {
+  margin-top: 200px;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 50%;
+  padding: 20px;
+}
+li {
+  list-style-type: none;
+}
+li.city {
+  font-size: 40px;
+}
+li.date {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  line-height: 1.1;
+}
+li.time {
+  font-size: 25px;
+}
+li.temperature {
+  font-size: 75px;
+  line-height: 1;
+}
+.units {
+  font-size: 20px;
+  position: relative;
+  top: -37px;
+}

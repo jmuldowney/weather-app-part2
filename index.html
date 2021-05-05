@@ -10,6 +10,16 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -17,20 +27,29 @@
     <div class="container">
       <div class="row">
         <div class="col-4">
-          <h1>New York</h1>
-          <ul>
-            <li>Wednesday</li>
-            <li>May 5, 2021</li>
-            <li>3:47 PM</li>
-            <li>Overcast clouds</li>
-          </ul>
+          <div class="overview">
+            <ul>
+              <li class="city">New York</li>
+              <li class="date">Wednesday <br />May 5, 2021</li>
+              <li class="time">3:47 PM</li>
+              <li>Overcast clouds</li>
+            </ul>
+          </div>
         </div>
         <div class="col-4">
-          <ul>
-            <li>15°C|°F</li>
-            <li>Precipitation: 15%</li>
-            <li>Humidity:92%</li>
-          </ul>
+          <div class="current-temperature-info">
+            <ul>
+              <li class="temperature">51<span class="units">°C|°F</span></li>
+              <li>Precipitation: 15%</li>
+              <li>Humidity:92%</li>
+              <li>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                  alt="clouds"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="col-4">
           <h2>5 Day forcast</h2>

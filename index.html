@@ -29,9 +29,8 @@
   </head>
   <body>
     <div class="container">
-        <div class="weather-app">
       <div class="row">
-        <div class="col-sm-6 col-lg-4 ">
+        <div class="col-4">
           <div class="overview">
             <ul>
               <li class="city">New York</li>
@@ -41,15 +40,15 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4">
+        <div class="col-4">
             <form>
-                <input class="form-control form-control-md city-input" type="search"
+                <input class="form-control form-control-md" type="search"
                 placeholder="Type a city..." autocomplete: off;/>
             <div class="row form">
-              <div class="col-8">
+              <div class="col-6">
                 <input class="btn btn-primary search-button" type="submit" value="Search" />
               </div>
-              <div class="col-4">
+              <div class="col-6">
                 <button type="button" class="btn btn-info present-location-button">
                   <i class="fas fa-map-marker-alt"></i>
                 </button>
@@ -58,7 +57,7 @@
           </div>
           <div class="current-temperature-info">
             <ul>
-              <li class="temperature">51<span class="units"><a href=#>°C</a>|°F</span></li>
+              <li class="temperature">51<span class="units">°C|°F</span></li>
               <li>Precipitation: 15%</li>
               <li>Humidity:92%</li>
               <li>
@@ -70,98 +69,17 @@
             </ul>
           </div>
         </div>
-
-        <div class="col-sm-6 col-lg-4">
+        <div class="col-4">
           <div class="forecast">
-              <div class="row">
-                  <div class="col-6">
-            <ul>
-                <li>
-                    W
-                </li>
-                <li>
-                    55/37°
-                </li>
-                <li>
-                    <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                  alt="clouds"
-                />
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Th
-                </li>
-                <li>
-                    55/37°
-                </li>
-                <li>
-                    <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                  alt="clouds"
-                />
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    F
-                </li>
-                <li>
-                    55/37°
-                </li>
-                <li>
-                    <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                  alt="clouds"
-                />
-                </li>
-            </ul>
-        </div>
-        <div class="col-6">
-            <ul>
-                <li>
-                    S
-                </li>
-                <li>
-                    55/37°
-                </li>
-                <li>
-                    <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                  alt="clouds"
-                />
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Su
-                </li>
-                <li>
-                    55/37°
-                </li>
-                <li>
-                    <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                  alt="clouds"
-                />
-                </li>
-            </ul>
-        </div>
-
-            </div>
+            <h1>5 Day forecast</h1>
           </div>
         </div>
       </div>
-      </div>
-      <footer>
-          <a href="https://github.com/jmuldowney/weather-app-part2" target="_blank">Open Source Code</a>
-               by Jennifer Muldowney
-              </footer>
     </div>
+    <footer>
+<a href="https://github.com/jmuldowney/weather-app-part2" target="_blank">Open Source Code</a>
+     by Jennifer Muldowney
+    </footer>
     <script src="src/app.js"></script>
   </body>
 </html>

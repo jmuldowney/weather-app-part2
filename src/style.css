@@ -10,21 +10,20 @@ div.overview {
   margin-top: 200px;
   text-align: center;
 }
-div.form {
-  margin-right: 0;
-  margin-left: 0;
-  max-width: 150px;
-}
 div.current-temperature-info {
   margin-top: 35px;
   text-align: center;
   border: 5px solid black;
   border-radius: 50%;
-  padding: 50px;
-  max-width: 300px;
+  padding: 20px;
 }
 div.forecast {
   margin-top: 200px;
+}
+div.form {
+  margin-right: 0;
+  margin-left: 0;
+  max-width: 150px;
 }
 li {
   list-style-type: none;
@@ -50,9 +49,6 @@ form {
 }
 footer {
   margin: 20px 100px;
-}
-.city-input {
-  max-width: 300px;
 }
 .present-location-button {
   display: block;

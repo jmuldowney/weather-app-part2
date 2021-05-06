@@ -20,6 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/476f2a295c.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -37,6 +41,20 @@
           </div>
         </div>
         <div class="col-4">
+            <form>
+                <input class="form-control form-control-md" type="search"
+                placeholder="Type a city..." autocomplete: off;/>
+            <div class="row form">
+              <div class="col-6">
+                <input class="btn btn-primary search-button" type="submit" value="Search" />
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-info present-location-button">
+                  <i class="fas fa-map-marker-alt"></i>
+                </button>
+              </div>
+            </form>
+          </div>
           <div class="current-temperature-info">
             <ul>
               <li class="temperature">51<span class="units">°C|°F</span></li>
@@ -52,7 +70,9 @@
           </div>
         </div>
         <div class="col-4">
-          <h2>5 Day forcast</h2>
+          <div class="forecast">
+            <h1>5 Day forecast</h1>
+          </div>
         </div>
       </div>
     </div>

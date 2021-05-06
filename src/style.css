@@ -11,11 +11,19 @@ div.overview {
   text-align: center;
 }
 div.current-temperature-info {
-  margin-top: 200px;
+  margin-top: 35px;
   text-align: center;
   border: 5px solid black;
   border-radius: 50%;
   padding: 20px;
+}
+div.forecast {
+  margin-top: 200px;
+}
+div.form {
+  margin-right: 0;
+  margin-left: 0;
+  max-width: 150px;
 }
 li {
   list-style-type: none;
@@ -34,6 +42,18 @@ li.time {
 li.temperature {
   font-size: 75px;
   line-height: 1;
+}
+form {
+  text-align: center;
+  margin-top: 75px;
+}
+.present-location-button {
+  display: block;
+  margin: 5px auto;
+}
+.search-button {
+  display: block;
+  margin: 5px auto;
 }
 .units {
   font-size: 20px;

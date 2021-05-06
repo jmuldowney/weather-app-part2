@@ -47,6 +47,9 @@ form {
   text-align: center;
   margin-top: 75px;
 }
+footer {
+  margin: 20px 100px;
+}
 .present-location-button {
   display: block;
   margin: 5px auto;

@@ -24,6 +24,7 @@
       src="https://kit.fontawesome.com/476f2a295c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -57,23 +58,26 @@
           <div class="col-sm-4">
             <div class="overview">
               <ul>
-                <li class="city">New York</li>
+                <li class="city" id="city">New York</li>
                 <li class="date">Wednesday <br />May 5, 2021</li>
                 <li class="time">3:47 PM</li>
-                <li>Overcast clouds</li>
+                <li class="description" id="description"></li>
               </ul>
             </div>
           </div>
 
           <div class="col-sm-4">
-            <div class="current-temperature-info">
+            <div class="current-weather-info">
               <ul>
-                <li class="temperature">
-                  51<span class="units"><a href="#">°C </a>| °F</span>
+                <li class="current-temperature">
+                  <span id="current-temperature"></span
+                  ><span class="units" id="units"
+                    ><a href="#"> °C </a>| °F</span
+                  >
                 </li>
-                <li>Precipitation: 15%</li>
-                <li>Humidity:92%</li>
-                <li>
+                <li>Wind: <span id="wind-speed"></span> mph</li>
+                <li>Humidity: <span id="humidity"></span> %</li>
+                <li id="weather-icon">
                   <img
                     src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
                     alt="clouds"

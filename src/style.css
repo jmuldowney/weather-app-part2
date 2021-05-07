@@ -23,7 +23,7 @@ div.overview {
   padding-left: 50px;
 }
 
-div.current-temperature-info {
+div.current-weather-info {
   margin-top: 15px;
   text-align: center;
   border: 5px solid black;
@@ -49,7 +49,10 @@ li.date {
 li.time {
   font-size: 25px;
 }
-li.temperature {
+li.description {
+  text-transform: capitalize;
+}
+li.current-temperature {
   font-size: 75px;
   line-height: 1;
 }

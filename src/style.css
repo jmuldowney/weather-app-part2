@@ -43,24 +43,22 @@ li.temperature {
   font-size: 75px;
   line-height: 1;
 }
-form {
-  text-align: center;
-  margin-top: 75px;
-}
 footer {
   margin: 20px 100px;
 }
 .city-input {
-  max-width: 300px;
+  max-width: 250px;
+  margin: 10px auto 0;
 }
-.present-location-button {
-  display: block;
-  margin: 5px auto;
+.location-buttons {
+  max-width: 150px;
+  margin: 10px auto;
 }
 .search-button {
-  display: block;
-  margin: 5px auto;
 }
+.present-location-button {
+}
+
 .units {
   font-size: 20px;
   position: relative;

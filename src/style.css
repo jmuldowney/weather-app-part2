@@ -1,20 +1,18 @@
 body {
   font-family: "Lato", sans-serif;
 }
-header {
-}
+
 ul {
   margin: 0;
   padding: 0;
 }
+
 div.form {
   margin-right: 0;
   margin-left: 0;
   max-width: 150px;
 }
 div.overview {
-  margin-top: 15px;
-  text-align: center;
 }
 div.current-temperature-info {
   margin-top: 15px;

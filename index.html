@@ -32,13 +32,20 @@
     <div class="container">
       <div class="weather-app">
         <header>
-          <form>
-            <input class="form-control form-control-md city-input" type="search"
-            placeholder="Type a city..." autocomplete: off;/>
+          <form id="search-form">
+            <input
+              class="form-control form-control-md city-input"
+              id="city-input"
+              ;type="search"
+              placeholder="Type a city..."
+              autocomplete="off"
+              ;
+            />
             <div class="row location-buttons">
               <div class="col-6">
                 <input
                   class="btn btn-primary search-button"
+                  id="search-button"
                   type="submit"
                   value="Search"
                 />

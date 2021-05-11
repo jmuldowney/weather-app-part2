@@ -74,3 +74,20 @@ footer {
   position: relative;
   top: -37px;
 }
+.celsius {
+  text-decoration: none;
+}
+.fahrenheit {
+  text-decoration: none;
+}
+
+.active {
+  color: #000;
+  cursor: default;
+  font-weight: 1000;
+  font-size: 17px;
+}
+.active:hover {
+  text-decoration: none;
+  color: #000;
+}

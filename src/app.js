@@ -95,18 +95,33 @@ function getFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#current-temperature");
   temperatureElement.innerHTML = Math.round((celsiusTemperature * 9) / 5 + 32);
+
+  let unitsElement = document.querySelector("#units");
+  unitsElement.innerHTML = `<a href="#" class="active fahrenheit" id="fahrenheit">
+        °F</a>|<a href="#" class="celsius" id="celsius">
+        °C</a>`;
 }
 
 function getCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#current-temperature");
+  let unitsElement = document.querySelector("#units");
+
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  unitsElement.innerHTML = `<a href="#" class="active celsius" id="celsius">
+        °C
+      </a>
+     |
+    
+      <a href="#" class="fahrenheit" id="fahrenheit">
+        °F
+      </a>
+    `;
 }
 
 let apiKey = "efa33d18dfb944c4cc64654a5590838f";
 let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather?";
 let celsiusTemperature = null;
-letFahrenheitTemperature = null;
 
 let formElement = document.querySelector("#search-form");
 formElement.addEventListener("submit", getCityInput);

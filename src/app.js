@@ -53,19 +53,22 @@ function displayWeather(response) {
   let iconElement = document.querySelector("#current-weather-icon");
   let dateElement = document.querySelector("#date");
   let timeElement = document.querySelector("#time");
+
   celsiusTemperature = Math.round(response.data.main.temp);
+
   temperatureElement.innerHTML = celsiusTemperature;
   cityElement.innerHTML = response.data.name;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   humidityElement.innerHTML = response.data.main.humidity;
   descriptionElement.innerHTML = response.data.weather[0].description;
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  timeElement.innerHTML = formatTime(response.data.dt * 1000);
+
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  timeElement.innerHTML = formatTime(response.data.dt * 1000);
 }
 
 function getCityInput(event) {
@@ -94,12 +97,12 @@ function getLocationInput(event) {
 function getFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#current-temperature");
-  temperatureElement.innerHTML = Math.round((celsiusTemperature * 9) / 5 + 32);
-
   let unitsElement = document.querySelector("#units");
+
+  temperatureElement.innerHTML = Math.round((celsiusTemperature * 9) / 5 + 32);
   unitsElement.innerHTML = `<a href="#" class="active fahrenheit" id="fahrenheit">
-        °F</a>|<a href="#" class="celsius" id="celsius">
-        °C</a>`;
+        °F</a>|<a href="#" class="celsius" id="celsius">°C</a>
+        `;
 }
 
 function getCelsius(event) {
@@ -109,14 +112,8 @@ function getCelsius(event) {
 
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   unitsElement.innerHTML = `<a href="#" class="active celsius" id="celsius">
-        °C
-      </a>
-     |
-    
-      <a href="#" class="fahrenheit" id="fahrenheit">
-        °F
-      </a>
-    `;
+        °C</a>|<a href="#" class="fahrenheit" id="fahrenheit">°F</a>
+        `;
 }
 
 let apiKey = "efa33d18dfb944c4cc64654a5590838f";

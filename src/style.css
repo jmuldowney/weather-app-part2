@@ -41,10 +41,11 @@ li {
 }
 li.city {
   font-size: 40px;
+  line-height: 1.1;
 }
 li.date {
   font-family: "Dancing Script", cursive;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.1;
 }
 li.time {

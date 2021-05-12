@@ -84,10 +84,16 @@ footer {
 .active {
   color: #000;
   cursor: default;
-  font-weight: 1000;
+  font-weight: 900;
   font-size: 17px;
 }
 .active:hover {
   text-decoration: none;
   color: #000;
+}
+.forecast-date {
+  font-weight: 900;
+}
+.forecast-temperature-min {
+  opacity: 0.6;
 }

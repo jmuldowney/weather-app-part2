@@ -32,57 +32,54 @@
     <div class="container">
       <div class="weather-app">
         <header>
-          <form id="search-form">
-            <input
-              class="form-control form-control-md city-input"
-              id="city-input"
-              ;type="search"
-              placeholder="Type a city..."
-              autocomplete="off"
-              ;
-            />
-            <div class="row location-buttons">
-              <div class="col-6">
-                <input
-                  class="btn btn-primary search-button"
-                  id="search-button"
-                  type="submit"
-                  value="Search"
-                />
-              </div>
-              <div class="col-6">
-                <button
-                  type="button"
-                  class="btn btn-info present-location-button"
-                  id="location-button"
-                >
-                  <i class="fas fa-map-marker-alt"></i>
-                </button>
-              </div>
-            </div>
-          </form>
+          <h1 class="date" id="date">Wednesday, May 5, 2021</h1>
         </header>
         <div class="row">
-          <div class="col-sm-6 col-lg-4">
+          <div class="col">
             <div class="overview">
               <ul>
-                <li class="city" id="city">New York</li>
-                <li class="date" id="date">Wednesday <br />May 5, 2021</li>
-                <li class="time" id="time">3:47 PM</li>
+                <li class="city" id="city"></li>
+
+                <li class="time" id="time"></li>
                 <li class="description" id="description"></li>
               </ul>
+              <form id="search-form">
+                <input
+                  class="form-control form-control-md city-input"
+                  id="city-input"
+                  ;type="search"
+                  placeholder="Type a city..."
+                  autocomplete="off"
+                  ;
+                />
+                <div class="row location-buttons">
+                  <div class="col-6">
+                    <input
+                      class="btn btn-primary search-button"
+                      id="search-button"
+                      type="submit"
+                      value="Search"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <button
+                      type="button"
+                      class="btn btn-info present-location-button"
+                      id="location-button"
+                    >
+                      <i class="fas fa-map-marker-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
 
-          <div class="col-sm-6 col-lg-4">
+          <div class="col">
             <div class="current-weather-info">
               <ul>
-                <li class="current-temperature">
-                  <span id="current-temperature"></span
-                  ><span class="units" id="units"
-                    ><a href="#" class="active celsius" id="celsius"> °C </a>|
-                    <a href="#" class="fahrenheit" id="fahrenheit"> °F</a></span
-                  >
+                <li class="current-temperature" id="current-temperature">
+                  <span class="unit">°F</span>
                 </li>
                 <li>Wind: <span id="wind-speed"></span> mph</li>
                 <li>Humidity: <span id="humidity"></span> %</li>
@@ -97,7 +94,7 @@
             </div>
           </div>
 
-          <div class="col-sm-5 col-lg-4">
+          <div class="col">
             <div class="forecast" id="forecast"></div>
           </div>
         </div>

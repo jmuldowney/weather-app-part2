@@ -5,9 +5,9 @@ function formatTime(timestamp) {
   let amPm = "";
 
   if (hours >= 12) {
-    amPm = `PM`;
+    amPm = `<small>PM</small>`;
   } else {
-    amPm = `AM`;
+    amPm = `<small>AM</small>`;
   }
   if (hours > 12) {
     hours = hours - 12;
@@ -77,9 +77,7 @@ function displayWeather(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  timeElement.innerHTML = `Last updated: ${formatTime(
-    response.data.dt * 1000
-  )}`;
+  timeElement.innerHTML = `${formatTime(response.data.dt * 1000)}`;
 
   getForecast(response.data.coord);
 }
@@ -99,7 +97,7 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-                <div class="col">
+                <div class="col-6">
                     <ul class="forecast-list">
                       <li class="forecast-date">${formatDay(
                         forecastDay.dt

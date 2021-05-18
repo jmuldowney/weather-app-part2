@@ -2,15 +2,23 @@ function formatTime(timestamp) {
   let now = new Date(timestamp);
   let hours = now.getHours();
   let minutes = now.getMinutes();
+  let amPm = "";
 
+  if (hours >= 12) {
+    amPm = `PM`;
+  } else {
+    amPm = `AM`;
+  }
+  if (hours > 12) {
+    hours = hours - 12;
+  }
   if (hours < 10) {
-    return `0${hours}:${minutes}`;
+    hours = `0${hours}`;
   }
   if (minutes < 10) {
-    return `${hours}:0${minutes}`;
-  } else {
-    return `${hours}:${minutes}`;
+    minutes = `0${minutes}`;
   }
+  return `${hours}:${minutes}${amPm}`;
 }
 function formatDate(timestamp) {
   let now = new Date(timestamp);

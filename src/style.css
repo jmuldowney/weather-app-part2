@@ -1,5 +1,6 @@
 body {
   font-family: "Lato", sans-serif;
+  padding: 5px;
 }
 
 h1 {
@@ -17,8 +18,9 @@ div.weather-app {
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
   border: 1px solid #d6d6d6;
   max-width: 1000px;
-  margin: 20px auto 0;
+  margin: 20px;
   padding-bottom: 20px;
+  padding-left: 10px;
 }
 div.form {
   margin-right: 0;
@@ -27,9 +29,6 @@ div.form {
 }
 
 div.overview {
-  padding-top: 40px;
-  padding-left: 50px;
-  margin: auto;
 }
 
 div.current-weather-info {
